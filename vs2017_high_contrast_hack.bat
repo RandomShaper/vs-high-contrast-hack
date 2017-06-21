@@ -23,16 +23,16 @@ rem ------------------------------------------------------------
 rem
 
 rem
-rem Visual Studio 2017, as happens with earlier versions, forces their high contrast theme in Windows is under a high contrast theme as well.
+rem Visual Studio 2017, as happens with earlier versions, forces its high contrast theme if Windows is under a high contrast theme as well.
 rem Microsoft seems not to be interested in fixing it so people have to use certain registry hacks to use Visual Studio's dark theme.
 rem Before the 2017 release, Visual Studio settings were right in the registry and you could do the hack by hand more or less easily.
 rem
-rem A first problem with that is under some circumstances (for instance, after updates) the theme setting switches back to the high contrast theme
-rem and you have to re-apply the hack by hand. Another problem is that from the 2017 release the registry settings have been moved to a hive file
-rem so you have first to load it into the global registry, rem do the hack and unload it again.
+rem A first problem with that is that under some circumstances (for instance, after updates) the theme setting switches back to high contrast
+rem and you have to re-apply the hack. Another problem is that from the 2017 release the registry settings have been moved to a hive file
+rem so you have first to load it into the global registry, do the hack and unload it again.
 rem
 rem The purpose of this program is to apply the hack for Visual Studio 2017 automatically. It makes a backup of the key containing
-rem the high contrast theme to a new key with '.backup' appended and copies the dark theme key recursively over that of the high contrast one.
+rem the high contrast theme to a new key with '.backup' appended to its name and copies the dark theme key recursively over that of the high contrast one.
 rem It first checks if the backup is already present to avoid overwriting it with the already-tampered data.
 rem
 
