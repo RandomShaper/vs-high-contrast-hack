@@ -70,6 +70,7 @@ if errorlevel 1 (
 	echo - Visual Studio is running or has exited a short time ago.
 	echo - You are not running this with administrator privileges.
 	echo - This program was aborted during a former run; in that case you'll have to use `regedit` to unload the following key manually: %tmp_key%
+	set ok=0
 	goto end
 )
 
