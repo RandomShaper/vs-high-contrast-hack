@@ -71,7 +71,7 @@ if errorlevel 1 (
 	goto end
 )
 
-reg query %themes_key%\{a5c004b4-2d4b-494e-bf01-45fc492522c7}.backup > nul
+reg query %themes_key%\{a5c004b4-2d4b-494e-bf01-45fc492522c7}.backup > nul 2>&1
 if errorlevel 1 (
 	echo Backing up high contrast theme
 	reg copy %themes_key%\{a5c004b4-2d4b-494e-bf01-45fc492522c7} %themes_key%\{a5c004b4-2d4b-494e-bf01-45fc492522c7}.backup /s > nul
