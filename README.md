@@ -16,6 +16,8 @@ The purpose of this program is to apply the hack for Visual Studio 2017 automati
 the high contrast theme to a new key with '.backup' appended to its name and copies the dark theme key recursively over that of the high contrast one.
 It first checks if the backup is already present to avoid overwriting it with the already-tampered data.
 
+This program applies the hack on every installation of Visual Studio 2017 present in the system.
+
 Credits to Chris Shrigley for his post on this: http://shrigley.com/visual-studio-2017-high-contrast-theme-registry-hack/
 
 __THIS SCRIPT MUST BE RUN WITH ADMINISTRATIVE PRIVILEGES.__
