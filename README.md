@@ -1,4 +1,4 @@
-# Visual Studio 2017 high contrast hack
+# ~Visual Studio 2017 high contrast hack~ [deprecated]
 
 Copyright 2017 Pedro J. Estébanez (MIT-licensed)
 
